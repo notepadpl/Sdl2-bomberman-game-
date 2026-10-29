@@ -28,7 +28,6 @@ jobs:
           em++ bombermanV.cpp \
             -s WASM=1 \
             -s USE_SDL=2 \
-            -O3 \
             -o dist/index.html
         shell: bash
 
