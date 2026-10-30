@@ -25,9 +25,10 @@ jobs:
         run: |
           source emsdk/emsdk_env.sh
           mkdir -p dist
-          em++ bombermanV.cpp \
+          em++ bombermanX.cpp \
             -s WASM=1 \
             -s USE_SDL=2 \
+            -O3 \
             -o dist/index.html
         shell: bash
 
